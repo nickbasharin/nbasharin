@@ -20,4 +20,14 @@ public class MaxTest {
         int result = maxim.max(1, 2);
         assertThat(result, is(2));
     }
+    /**
+     * Test max3.
+     */
+    @Test
+    public void whenFirstLessSecondMoreThanThird() {
+        Max maxim = new Max();
+        int result = maxim.max3(3, 5, 1);
+        assertThat(result, is(5));
+    }
+
 }

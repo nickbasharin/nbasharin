@@ -12,4 +12,7 @@ public class Max {
         return (first > second) ? first : second;
     }
 
+    public int max3(int first, int second, int third) {
+        return max(first, max(second, third));
+    }
 }
