@@ -13,29 +13,20 @@ public class CheckString {
         boolean cont = false;
         char[] originChar = origin.toCharArray();
         char[] subChar = sub.toCharArray();
-        if (!(originChar.length < subChar.length)) {
-
-            for  (int i = 0; i < originChar.length; i++) {
-                if (subChar [0] == originChar[i]) {
-                    cont = true;
-                    int j = 1;
-                    while ((j < subChar.length) && (cont)) {
-                        if ((i + j) == originChar.length) {
-                            cont = false;
-                        }
-                        else if (!(subChar [j] == originChar[i + j])) {
-                            cont = false;
-                        }
-                        j++;
+        for  (int i = 0; i < originChar.length; i++) {
+            if ((subChar [0] == originChar[i]) && (i + subChar.length) <= originChar.length) {
+                cont = true;
+                for (int j = 1; j < subChar.length; j++) {
+                    if (!(subChar [j] == originChar[i + j])) {
+                        cont = false;
+                        break;
                     }
                 }
-                if (cont) {
-                    return cont;
-                }
-
+            }
+            if (cont)  {
+                break;
             }
         }
         return cont;
-
     }
 }

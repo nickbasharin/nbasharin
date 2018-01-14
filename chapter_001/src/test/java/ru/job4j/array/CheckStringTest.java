@@ -46,6 +46,19 @@ public class CheckStringTest {
         boolean rst = checkString.contains(original, sub);
         assertThat(rst, is(false));
     }
+    /**
+     * Test contains()
+     */
+
+    @Test
+    public void whenSubStringBiggerThanOriginal() {
+        String sub = "today go away";
+        String original = "today";
+        CheckString checkString = new CheckString();
+        boolean rst = checkString.contains(original, sub);
+        assertThat(rst, is(false));
+    }
+
 
 
 }
