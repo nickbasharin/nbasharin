@@ -19,10 +19,10 @@ public class ArrayDuplicateTest {
 
     @Test
     public void whenRemoveDuplicatesThenArrayWithoutDuplicate() {
-        String in [] = {"aaa", "fff", "ccc", "aaa", "bbb"};
+        String in[] = {"aaa", "fff", "ccc", "aaa", "bbb"};
         ArrayDuplicate arrayDuplicate = new ArrayDuplicate();
         String res[] = arrayDuplicate.remove(in);
-        String out [] = {"aaa", "fff", "ccc", "bbb"};
+        String out[] = {"aaa", "fff", "ccc", "bbb"};
         assertThat(res, is(out));
     }
 
@@ -31,10 +31,10 @@ public class ArrayDuplicateTest {
      */
     @Test
     public void whenRemoveDuplicatesThenArrayWithoutDuplicate2() {
-        String in [] = {"aaa", "fff", "ccc", "aaa", "bbb", "ccc", "bbb", "1"};
+        String in[] = {"aaa", "fff", "ccc", "aaa", "bbb", "ccc", "bbb", "1"};
         ArrayDuplicate arrayDuplicate = new ArrayDuplicate();
         String res[] = arrayDuplicate.remove(in);
-        String out [] = {"aaa", "fff", "ccc", "1", "bbb"};
+        String out[] = {"aaa", "fff", "ccc", "1", "bbb"};
         assertThat(res, is(out));
     }
 
