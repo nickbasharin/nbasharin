@@ -4,7 +4,7 @@ public class Engineer extends Profession {
 
     private String engineeringType;
 
-    Engineer (String name, int years, String engineeringType) {
+    Engineer(String name, int years, String engineeringType) {
         this.name = name;
         this.years = years;
         this.engineeringType = engineeringType;
@@ -12,7 +12,7 @@ public class Engineer extends Profession {
 
     Engine engineering(EngineData engineData) {
         Engine engine = new Engine();
-        engine.price = engineData.power *10;
+        engine.price = engineData.power * 10;
         return engine;
     }
 

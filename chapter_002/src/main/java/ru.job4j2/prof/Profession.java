@@ -5,7 +5,7 @@ public class Profession {
     String name;
     int years;
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 }

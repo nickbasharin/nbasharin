@@ -4,7 +4,7 @@ public class Doctor extends Profession {
 
     private String healType;
 
-    Doctor (String name, int years, String healType) {
+    Doctor(String name, int years, String healType) {
         this.name = name;
         this.years = years;
         this.healType = healType;
