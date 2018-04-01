@@ -1,4 +1,5 @@
 package ru.job4j2.tracker;
+import java.util.Date;
 
 /**
  *
@@ -15,11 +16,18 @@ public class Item {
     private long created;
     private String[] comments;
 
+    public Item(String name, String desc) {
+        this.name = name;
+        this.desc = desc;
+        this.created = new Date().getTime();
+    }
+
     public Item(String name, String desc, long created) {
         this.name = name;
         this.desc = desc;
         this.created = created;
     }
+
 
     public String getId() {
         return id;
